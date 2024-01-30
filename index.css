@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+
+body{
+    background-color: #fff5f0;
+    scrollbar-width: none !important;
+}
+
+.lowerbody{
+    background-color: #f3f3f3;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.HeaderTitle {
+    color: white;
+    font-size: 6em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.LeftLeg{
+    background-image: url('Images/redberries5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+height: 100%;
+    width: 39.5%;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+
+.RightLeg{
+    background-color: #6e4826;
+    height: 100%;
+    width: 59.5%;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #c61605;
+   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('Images/redberries4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 767px) {
+
+    .HeaderTitle {
+        color: white;
+        font-size: 1.5em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .header {
+        height: 50vh;
+    }
+    .lowerbody{
+        flex-direction: column;
+        gap:3px;
+       }
+       .LeftLeg{
+        width: 100%;
+        border-radius: 0px;
+       }
+       .RightLeg{
+        width: 100%;
+        border-radius: 0px;
+       }
+
+       .footer{
+        
+        height: 100px;
+      
+       
+    }
+}
+
+.body{
+    background-color: #fff5f0;
+    height: 350px;
+}
+
+
+.palette{
+    color: #ff3344;
+    color: #77cc6d;
+    color: #fff5f0;
+    color: #6e4826;
+    color: #87CEEB;
+}
